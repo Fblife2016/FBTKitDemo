@@ -15,6 +15,7 @@
 		81E94BFE1C5A238F00C42B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E94BFC1C5A238F00C42B25 /* LaunchScreen.storyboard */; };
 		81E94C091C5A238F00C42B25 /* FBTKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E94C081C5A238F00C42B25 /* FBTKitDemoTests.m */; };
 		81E94C141C5A238F00C42B25 /* FBTKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E94C131C5A238F00C42B25 /* FBTKitDemoUITests.m */; };
+		81E94C781C5B0D2800C42B25 /* NSNotification+FBTAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E94C771C5B0D2800C42B25 /* NSNotification+FBTAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,11 @@
 		81E94C0F1C5A238F00C42B25 /* FBTKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBTKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E94C131C5A238F00C42B25 /* FBTKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBTKitDemoUITests.m; sourceTree = "<group>"; };
 		81E94C151C5A238F00C42B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E94C761C5B0D2800C42B25 /* NSNotification+FBTAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+FBTAdd.h"; sourceTree = "<group>"; };
+		81E94C771C5B0D2800C42B25 /* NSNotification+FBTAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+FBTAdd.m"; sourceTree = "<group>"; };
+		81E94C791C5B0D4C00C42B25 /* FBTKitNSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBTKitNSHeader.h; sourceTree = "<group>"; };
+		81E94C7A1C5B0D6400C42B25 /* FBTKitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBTKitHeader.h; sourceTree = "<group>"; };
+		81E94C7B1C5B0D8400C42B25 /* FBTKitUIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBTKitUIHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		81E94BE21C5A238F00C42B25 = {
 			isa = PBXGroup;
 			children = (
+				81E94C731C5B0D0E00C42B25 /* FBTKit */,
 				81E94BED1C5A238F00C42B25 /* FBTKitDemo */,
 				81E94C071C5A238F00C42B25 /* FBTKitDemoTests */,
 				81E94C121C5A238F00C42B25 /* FBTKitDemoUITests */,
@@ -138,6 +145,34 @@
 				81E94C151C5A238F00C42B25 /* Info.plist */,
 			);
 			path = FBTKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		81E94C731C5B0D0E00C42B25 /* FBTKit */ = {
+			isa = PBXGroup;
+			children = (
+				81E94C7A1C5B0D6400C42B25 /* FBTKitHeader.h */,
+				81E94C741C5B0D0E00C42B25 /* NSFoundation */,
+				81E94C751C5B0D0E00C42B25 /* UIKit */,
+			);
+			path = FBTKit;
+			sourceTree = "<group>";
+		};
+		81E94C741C5B0D0E00C42B25 /* NSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				81E94C791C5B0D4C00C42B25 /* FBTKitNSHeader.h */,
+				81E94C761C5B0D2800C42B25 /* NSNotification+FBTAdd.h */,
+				81E94C771C5B0D2800C42B25 /* NSNotification+FBTAdd.m */,
+			);
+			path = NSFoundation;
+			sourceTree = "<group>";
+		};
+		81E94C751C5B0D0E00C42B25 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				81E94C7B1C5B0D8400C42B25 /* FBTKitUIHeader.h */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +307,7 @@
 			files = (
 				81E94BF61C5A238F00C42B25 /* ViewController.m in Sources */,
 				81E94BF31C5A238F00C42B25 /* AppDelegate.m in Sources */,
+				81E94C781C5B0D2800C42B25 /* NSNotification+FBTAdd.m in Sources */,
 				81E94BF01C5A238F00C42B25 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
